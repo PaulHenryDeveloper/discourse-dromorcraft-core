@@ -2,3 +2,6 @@ discourse_dromorcraft_core:
   dromorcraft_core_enabled:
     default: false
     client: true
+  dromorcraft_core_support_categories:
+    type: category_list
+    default: ""

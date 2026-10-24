@@ -2,11 +2,34 @@
 
 Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader.
 
-> **Status:** skeleton (0.1.0). The setting `dromorcraft_core_enabled` is off by default and the plugin does nothing yet. The features below are planned.
+> **Status:** 0.2.0, extraction only. `dromorcraft_core_enabled` is off by default.
+
+## Settings
+
+| Setting | Default | What it does |
+| --- | --- | --- |
+| `dromorcraft_core_enabled` | off | Turns the plugin on. |
+| `dromorcraft_core_support_categories` | empty | Categories whose new topics are read (on the forum: Support › Help and Support › Launcher bugs). |
+
+## Extraction
+
+When a regular topic is created in one of the support categories, the plugin fills four topic custom fields:
+
+| Field | Source | Accepted values |
+| --- | --- | --- |
+| `dc_launcher_version` | "Launcher version" in the first post | `^[0-9]{1,3}(\.[0-9]{1,3}){1,3}$`, at most 15 characters |
+| `dc_mc_version` | "Minecraft version" in the first post | same |
+| `dc_os` | the topic's tags | `windows`, `linux` (only when exactly one is set) |
+| `dc_loader` | the topic's tags | `vanilla`, `fabric`, `quilt`, `forge`, `neoforge` (only when exactly one is set) |
+
+- A value that doesn't match is left out; nothing is stored as typed.
+- A field the post doesn't have is left out.
+- Personal messages and other categories are ignored.
+- If extraction raises, the error is logged and the topic is created as usual.
+
+The fields are read once, on `topic_created`; editing the post later doesn't change them.
 
 ## Planned
-
-- **Extraction.** When a topic is created in Support › Help or Support › Launcher bugs, read the post the form template produced and store `dc_launcher_version`, `dc_mc_version`, `dc_os` and `dc_loader` as topic custom fields, with a strict charset and length. If extraction fails, the topic goes on as normal.
 - **Known launcher versions.** A scheduled job reads the public [releases feed](https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases.atom) (no token). A topic on an outdated version gets a notice linking to the download page. If the feed is down, the previous list stays.
 - **Support card** above the first post, with the extracted data and links to the site's resources, readable in both palettes.
 - **Edit permissions.** Only the author and staff edit the fields.

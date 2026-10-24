@@ -1,3 +1,4 @@
 en:
   site_settings:
     dromorcraft_core_enabled: "Enable the DromorCraft support features (structured data from the support form templates)."
+    dromorcraft_core_support_categories: "Categories whose new topics are read for the launcher version, Minecraft version, system and loader (Support › Help and Support › Launcher bugs)."
