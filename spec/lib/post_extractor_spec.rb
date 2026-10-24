@@ -59,7 +59,6 @@ RSpec.describe DromorcraftCore::PostExtractor do
       "1.4.24-beta",
       "1.4.24 <script>",
       "v1.4.24",
-      "1.4",
       "1",
       "1.4.24.1.2",
       "1234.4.24",

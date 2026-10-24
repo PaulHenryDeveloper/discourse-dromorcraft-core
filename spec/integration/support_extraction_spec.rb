@@ -2,8 +2,8 @@
 
 RSpec.describe "Support extraction on topic creation" do
   fab!(:admin)
-  fab!(:support) { Fabricate(:category) }
-  fab!(:other_category) { Fabricate(:category) }
+  fab!(:support, :category)
+  fab!(:other_category, :category)
   fab!(:windows) { Fabricate(:tag, name: "windows") }
   fab!(:linux) { Fabricate(:tag, name: "linux") }
   fab!(:fabric) { Fabricate(:tag, name: "fabric") }
