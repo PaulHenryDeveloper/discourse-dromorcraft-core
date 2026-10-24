@@ -39,7 +39,7 @@ An hourly job (`Jobs::DromorcraftCore::RefreshKnownVersions`) reads the public [
 - The feed lists only the latest releases, so each run adds to the stored list (in `PluginStore`, newest first, at most 100) instead of replacing it.
 - If the feed is down, times out, answers with an error, is larger than 1 MB or isn't a feed, the previous list stays.
 
-When a new support topic has a launcher version older than the newest known one, the first post gets a [post notice](https://meta.discourse.org/t/staff-notices/) with a link to `https://dromorcraft.com/download/`. Nothing is posted as a reply, so the topic isn't bumped and still counts as unanswered. The notice replaces the automatic first-post notices (new or returning user) but never one written by staff. A version newer than the latest known, or no known versions yet, means no notice.
+When a new support topic has a launcher version older than the newest known one, the first post gets a post notice (the same kind staff add with "Add staff notice") with a link to `https://dromorcraft.com/download/`. Nothing is posted as a reply, so the topic isn't bumped and still counts as unanswered. The notice replaces the automatic first-post notices (new or returning user) but never one written by staff. A version newer than the latest known, or no known versions yet, means no notice.
 
 ## Planned
 - **Support card** above the first post, with the extracted data and links to the site's resources, readable in both palettes.
