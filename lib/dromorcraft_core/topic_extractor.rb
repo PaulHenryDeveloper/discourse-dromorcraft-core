@@ -27,14 +27,16 @@ module ::DromorcraftCore
       fields
     end
 
+    # True when the topic is in scope and something was stored.
     def self.store(topic)
-      return unless in_scope?(topic)
+      return false unless in_scope?(topic)
 
       fields = call(topic)
-      return if fields.empty?
+      return false if fields.empty?
 
       fields.each { |name, value| topic.custom_fields[name] = value }
       topic.save_custom_fields(true)
+      true
     end
   end
 end

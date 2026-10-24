@@ -5,3 +5,5 @@ discourse_dromorcraft_core:
   dromorcraft_core_support_categories:
     type: category_list
     default: ""
+  dromorcraft_core_outdated_notice:
+    default: true

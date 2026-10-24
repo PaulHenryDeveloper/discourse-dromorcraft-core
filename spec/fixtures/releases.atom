@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+  <id>tag:github.com,2008:https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases</id>
+  <link type="text/html" rel="alternate" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases"/>
+  <link type="application/atom+xml" rel="self" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases.atom"/>
+  <title>Release notes from DromorCraft-releases</title>
+  <updated>2026-09-16T08:19:42Z</updated>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.24</id>
+    <updated>2026-09-26T09:47:54Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.24"/>
+    <title>DromorCraft v1.4.24</title>
+    <content type="html">&lt;p&gt;New features and improvements.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Worlds moved into the instance page, with copy to another instance, folder access and per-world backups.&lt;/li&gt;
+&lt;li&gt;Screenshots tab on the instance page, with a full-size viewer.&lt;/li&gt;
+&lt;li&gt;Project gallery viewer with arrows, thumbnails and actual-size zoom.&lt;/li&gt;
+&lt;li&gt;Exports ask where to save the file.&lt;/li&gt;
+&lt;li&gt;Sharper skin preview with a smoother walk.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.22</id>
+    <updated>2026-09-19T09:48:15Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.22"/>
+    <title>DromorCraft v1.4.22</title>
+    <content type="html">&lt;p&gt;Bug fixes and corrections.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data packs are listed and managed per world.&lt;/li&gt;
+&lt;li&gt;Any memory size can be set for an instance.&lt;/li&gt;
+&lt;li&gt;Exported modpacks no longer include the launcher&#39;s cache files.&lt;/li&gt;
+&lt;li&gt;Firewall status is shown for servers that outlived a previous launcher run.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.21</id>
+    <updated>2026-09-18T23:31:11Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.21"/>
+    <title>DromorCraft v1.4.21</title>
+    <content type="html">&lt;p&gt;Bug fixes and corrections.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;World backups can be restored, and worlds can be imported from a zip.&lt;/li&gt;
+&lt;li&gt;Forge for Minecraft 1.7 to 1.12 and NeoForge for 1.20.1 install.&lt;/li&gt;
+&lt;li&gt;Microsoft accounts can play offline.&lt;/li&gt;
+&lt;li&gt;Java installed by other launchers and vendors is found.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.20</id>
+    <updated>2026-09-18T19:56:57Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.20"/>
+    <title>DromorCraft v1.4.20</title>
+    <content type="html">&lt;p&gt;Bug fixes and corrections.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Play time and &quot;continue playing&quot; now work.&lt;/li&gt;
+&lt;li&gt;Stopping the game asks it to save and close first.&lt;/li&gt;
+&lt;li&gt;Forge and NeoForge instances open faster and work offline.&lt;/li&gt;
+&lt;li&gt;Quilt instances accept Fabric mods; NeoForge 1.20.1 accepts Forge mods.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.14</id>
+    <updated>2026-09-18T16:50:05Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.14"/>
+    <title>DromorCraft v1.4.14</title>
+    <content type="html">&lt;p&gt;Nada mais mexe nos arquivos de uma instância enquanto o jogo está aberto, o Java certo&lt;br&gt;
+é instalado quando o launcher oferece, e várias falhas silenciosas passam a avisar.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jogo aberto: excluir a instância, apagar um mundo e instalar, atualizar, desativar ou&lt;br&gt;
+remover um mod agora são recusados enquanto o jogo roda — no Windows essas operações&lt;br&gt;
+paravam no meio e deixavam o save ou a pasta pela metade. Os botões ficam desativados e&lt;br&gt;
+dizem o motivo. A mesma instância também não abre duas vezes: a tela de detalhes mostra&lt;br&gt;
+&quot;Encerrar&quot; enquanto o jogo está aberto.&lt;/li&gt;
+&lt;li&gt;Excluir instância: os arquivos são removidos antes do registro, então uma exclusão que&lt;br&gt;
+falha não deixa uma pasta órfã; e uma instância nova com o mesmo nome de uma excluída&lt;br&gt;
+sem apagar arquivos não herda mais os mods e saves da antiga.&lt;/li&gt;
+&lt;li&gt;Mapas: &quot;Remover&quot; pede confirmação antes de apagar a pasta do mundo.&lt;/li&gt;
+&lt;li&gt;Java: &quot;Baixar o Java 21&quot; baixa mesmo o 21 (antes reaproveitava o 26 e nada mudava); a&lt;br&gt;
+verificação de compatibilidade avisa do Java novo demais para o loader já no primeiro&lt;br&gt;
+launch de uma instância modded, e o diagnóstico de crash reconhece esse caso e oferece&lt;br&gt;
+o Java certo. A opção oferecida é sempre uma versão que existe para baixar.&lt;/li&gt;
+&lt;li&gt;Falha ao abrir o jogo: o aviso traz o botão &quot;Ver o que fazer&quot;, que leva à tela de&lt;br&gt;
+compatibilidade. A opção &quot;Não mostrar nenhum aviso&quot; virou &quot;Só erros&quot;: um erro em&lt;br&gt;
+resposta a um clique seu sempre aparece.&lt;/li&gt;
+&lt;li&gt;Atualizar o launcher: o botão fica desativado enquanto um jogo ou servidor está aberto,&lt;br&gt;
+em vez de falhar a cada clique.&lt;/li&gt;
+&lt;li&gt;Reparar: o botão &quot;Reparar&quot; do card e &quot;Verificar instalação&quot; agora reparam a instância&lt;br&gt;
+de verdade — mostram o progresso no card e tiram a marca &quot;Com falha&quot; quando terminam.&lt;/li&gt;
+&lt;li&gt;Snapshots: restaurar o snapshot automático mais antigo não o apaga mais antes de&lt;br&gt;
+restaurar.&lt;/li&gt;
+&lt;li&gt;Modpacks: um build do Forge vindo de um modpack (CurseForge ou .mrpack) instala em vez&lt;br&gt;
+de falhar com &quot;não encontrado&quot;; um pack que lista o mesmo arquivo duas vezes não perde&lt;br&gt;
+mais o registro do que instalou (o que impedia atualizar e reparar depois).&lt;/li&gt;
+&lt;li&gt;CurseForge: bibliotecas embutidas em um mod não são mais instaladas em separado, e&lt;br&gt;
+mods declarados incompatíveis passam a ser reconhecidos como tal.&lt;/li&gt;
+&lt;li&gt;Skin: enviar uma skin por arquivo ou copiar de um jogador volta a ser aceito pela&lt;br&gt;
+Mojang.&lt;/li&gt;
+&lt;li&gt;Conta Microsoft: uma instabilidade nos serviços da Xbox ou da Mojang não marca mais a&lt;br&gt;
+conta como &quot;entre de novo&quot;; só uma recusa real faz isso.&lt;/li&gt;
+&lt;li&gt;Versões antigas (1.7 a 1.8): o jogo abria e fechava na hora; agora abre. Em versões&lt;br&gt;
+ainda mais antigas, a sessão da conta não vai mais para o arquivo de log.&lt;/li&gt;
+&lt;li&gt;Log da sessão: no Windows em português, uma linha com acento no meio do log do jogo&lt;br&gt;
+cortava o registro dali em diante; agora o log vai inteiro, e o diagnóstico junto.&lt;/li&gt;
+&lt;li&gt;Segurança: downloads e chamadas à API não seguem mais um redirecionamento de HTTPS para&lt;br&gt;
+HTTP; o instalador do Forge/NeoForge só roda depois de conferido; as bibliotecas do&lt;br&gt;
+Quilt passam a ser conferidas como as demais.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.13</id>
+    <updated>2026-09-18T09:23:52Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.13"/>
+    <title>DromorCraft v1.4.13</title>
+    <content type="html">&lt;p&gt;A skin da conta Microsoft volta a aparecer no launcher instalado.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Skin da conta: o visualizador mostrava um boneco cinza e o avatar um rosto genérico,&lt;br&gt;
+mesmo com a skin escolhida na conta. Agora a skin vestida aparece no visualizador, no&lt;br&gt;
+guarda-roupa e ao lado do nome da conta.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.12</id>
+    <updated>2026-09-18T01:01:55Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.12"/>
+    <title>DromorCraft v1.4.12</title>
+    <content type="html">&lt;p&gt;O catálogo do CurseForge volta a aparecer no launcher instalado, e as capas da conta&lt;br&gt;
+não somem mais durante uma pausa da Mojang.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CurseForge: nas versões instaladas o catálogo não aparecia — a chave que o launcher&lt;br&gt;
+precisa para falar com o CurseForge só era lida em desenvolvimento. Agora ela vai&lt;br&gt;
+dentro do launcher, então mods, modpacks e o resto do CurseForge aparecem ao lado do&lt;br&gt;
+Modrinth em qualquer instalação, sem configurar nada.&lt;/li&gt;
+&lt;li&gt;Capas da conta Microsoft: quando a Mojang pede uma pausa depois de várias trocas&lt;br&gt;
+seguidas, o launcher mostrava a última skin guardada, mas as capas sumiam até a pausa&lt;br&gt;
+acabar. Agora ele guarda também as capas que a Mojang listou por último e continua&lt;br&gt;
+mostrando todas durante a pausa.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.11</id>
+    <updated>2026-09-17T18:22:21Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.11"/>
+    <title>DromorCraft v1.4.11</title>
+    <content type="html">&lt;p&gt;Ícone novo, instalador em português, e a skin da conta não some mais quando a Mojang pede&lt;br&gt;
+uma pausa.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ícone: a águia passa a ser o ícone do launcher — no atalho, na barra de tarefas, na&lt;br&gt;
+janela e no instalador.&lt;/li&gt;
+&lt;li&gt;Instalador: pergunta o idioma (português ou inglês), instala para o usuário atual numa&lt;br&gt;
+pasta &quot;DromorCraft&quot; do menu Iniciar e já traz o WebView2 embutido, então um&lt;br&gt;
+computador sem ele instala sem baixar mais nada. No Linux há também um pacote .deb&lt;br&gt;
+além do AppImage.&lt;/li&gt;
+&lt;li&gt;Skin e capa da conta Microsoft: trocar skin ou capa muitas vezes seguidas faz a&lt;br&gt;
+Mojang pedir uma pausa. Antes o launcher entendia isso como sessão expirada, pedia&lt;br&gt;
+para entrar de novo e a conta ficava sem skin e sem capas. Agora ele avisa quanto&lt;br&gt;
+tempo esperar, mostra a última aparência que guardou e libera os botões quando a&lt;br&gt;
+pausa acaba. Depois de cada troca os botões ficam travados por alguns segundos, para&lt;br&gt;
+não cair na pausa por engano.&lt;/li&gt;
+&lt;li&gt;Downloads e Processos: a bandeja no canto chama-se Downloads e mostra só o que está&lt;br&gt;
+baixando ou instalando — jogo, loaders, mods, pacotes e a atualização do launcher —&lt;br&gt;
+com os concluídos logo abaixo. O resto (diagnóstico, exportação, entrada na conta,&lt;br&gt;
+abertura do jogo) fica na tela Processos, abaixo de Contas no menu.&lt;/li&gt;
+&lt;li&gt;As linhas de tarefa se mexem enquanto trabalham e guardam a cor do resultado ao&lt;br&gt;
+terminar; quem prefere menos movimento no sistema não vê animação.&lt;/li&gt;
+&lt;li&gt;Adicionar conta: a escolha entre conta Microsoft e perfil offline ganhou a marca da&lt;br&gt;
+Microsoft e um símbolo próprio para o offline.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.10</id>
+    <updated>2026-09-17T10:14:37Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.10"/>
+    <title>DromorCraft v1.4.10</title>
+    <content type="html">&lt;p&gt;O launcher que não consegue abrir agora se atualiza sozinho.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Atualizar pela tela de erro: quando o launcher não inicia porque os dados foram&lt;br&gt;
+gravados por uma versão mais nova — o que acontece ao rodar uma cópia antiga depois&lt;br&gt;
+de uma atualização — a tela de erro procura a versão nova sozinha e oferece&lt;br&gt;
+&quot;Atualizar agora&quot;. Antes ela só pedia para instalar a versão mais recente, sem um&lt;br&gt;
+caminho para isso dentro do launcher.&lt;/li&gt;
+&lt;li&gt;Em qualquer outra falha ao iniciar, um botão &quot;Procurar atualização&quot; faz a mesma&lt;br&gt;
+busca. A atualização é a mesma de sempre: assinada e verificada antes de instalar.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+  <entry>
+    <id>tag:github.com,2008:Repository/1363382278/v1.4.9</id>
+    <updated>2026-09-17T09:03:16Z</updated>
+    <link rel="alternate" type="text/html" href="https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases/tag/v1.4.9"/>
+    <title>DromorCraft v1.4.9</title>
+    <content type="html">&lt;p&gt;Uma interface nova, contas com skin e capa, e entrar em qualquer servidor pelo endereço.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual novo: uma interface plana e quadrada, em cinzas com um só verde — sem cantos&lt;br&gt;
+arredondados, sombras ou brilhos. O que está selecionado leva uma barra verde na&lt;br&gt;
+borda; campos, seletores e botões têm um único estilo em todas as telas.&lt;/li&gt;
+&lt;li&gt;Instância em seções: a tela da instância mostra o resumo no topo e, abaixo, abas para&lt;br&gt;
+Mods, Modpack, Configurações, Logs e Snapshots — num servidor, também Console, Rede,&lt;br&gt;
+Jogadores e Propriedades. Só a aba aberta é carregada, e a coluna ficou mais larga.&lt;/li&gt;
+&lt;li&gt;Mods da instância: a seção Mods virou uma tabela onde dá para trabalhar — desligar,&lt;br&gt;
+remover, atualizar quando há build mais nova, identificar ou apagar um jar colocado à&lt;br&gt;
+mão — com um filtro por nome ou arquivo.&lt;/li&gt;
+&lt;li&gt;Snapshots em tabela: um por linha, com data, versão e loader, quantidade de mods e&lt;br&gt;
+tamanho; um snapshot de outra versão ou loader é marcado, porque restaurá-lo muda&lt;br&gt;
+mais do que os mods.&lt;/li&gt;
+&lt;li&gt;Catálogos em listas: Mods, resource packs, shaders, data packs, mapas e modpacks&lt;br&gt;
+compartilham o mesmo desenho — uma faixa de busca e dois painéis, com um projeto por&lt;br&gt;
+linha em vez de cards. Um item desativado aparece riscado.&lt;/li&gt;
+&lt;li&gt;Skin e capa: cada conta tem um diálogo de Aparência. Uma conta Microsoft troca a skin,&lt;br&gt;
+o modelo (clássico ou fino) e a capa na própria conta, valendo em qualquer servidor e&lt;br&gt;
+launcher; um perfil offline guarda a skin no launcher. Ambos podem copiar a skin de&lt;br&gt;
+um jogador pelo nome. A prévia é um boneco em três dimensões que gira, anda, veste a&lt;br&gt;
+capa e pode ser inclinado, aproximado e pausado. As skins já usadas ficam num&lt;br&gt;
+guarda-roupa, para vestir de novo com um clique.&lt;/li&gt;
+&lt;li&gt;Estado da conta: a tela de contas confere cada conta Microsoft ao abrir — um nome&lt;br&gt;
+mudado no site aparece aqui, e uma sessão perdida ou uma conta sem Minecraft: Java&lt;br&gt;
+Edition é marcada na própria linha, com &quot;Entrar de novo&quot; no lugar. A barra lateral&lt;br&gt;
+mostra quem está jogando e troca de conta ali mesmo, com aviso vermelho quando a&lt;br&gt;
+conta precisa de você.&lt;/li&gt;
+&lt;li&gt;Entrar por endereço: uma instância pode abrir o jogo direto num servidor digitado —&lt;br&gt;
+&lt;code&gt;host&lt;/code&gt;, &lt;code&gt;host:porta&lt;/code&gt; ou IPv6 entre colchetes. Os endereços usados ficam guardados e&lt;br&gt;
+são oferecidos de novo.&lt;/li&gt;
+&lt;li&gt;Rostos sem rede: as skins e capas são guardadas em cache, então a lista de contas não&lt;br&gt;
+espera a rede para desenhar um rosto, e ele continua aparecendo sem conexão.&lt;/li&gt;
+&lt;li&gt;Avisos na tela: em Configurações → Aparência, escolha se os avisos aparecem todos, só&lt;br&gt;
+os de atenção e erro, ou nenhum.&lt;/li&gt;
+&lt;li&gt;Configurações com índice: uma lista à esquerda leva a cada seção; a versão e o&lt;br&gt;
+relatório de saúde saíram da barra do topo e têm seu lugar na barra lateral e nas&lt;br&gt;
+Configurações.&lt;/li&gt;
+&lt;li&gt;Capa da instância vanilla: um bloco isométrico desenhado pelo launcher, diferente em&lt;br&gt;
+cada instância, com a marca do jogo sem mods.&lt;/li&gt;
+&lt;li&gt;Mapas sem CurseForge: quando nenhum catálogo configurado publica mapas, a tela diz&lt;br&gt;
+isso e como configurar, em vez de mostrar &quot;provedor não suporta essa operação&quot;.&lt;/li&gt;
+&lt;li&gt;Dados de uma versão mais nova: abrir o launcher com um banco de dados gravado por uma&lt;br&gt;
+versão mais recente agora explica o que aconteceu e pede para instalar a versão mais&lt;br&gt;
+nova, na tela e no arquivo &lt;code&gt;nao-iniciou.txt&lt;/code&gt;, em vez de um erro genérico de banco.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <author>
+      <name>PaulHenryDeveloper</name>
+    </author>
+    <media:thumbnail height="30" width="30" url="https://avatars.githubusercontent.com/u/173421581?s=60&amp;v=4"/>
+  </entry>
+</feed>

@@ -1,8 +1,8 @@
 # DromorCraft core
 
-Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader.
+Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader. Topics reported on an old launcher get a notice pointing to the download page.
 
-> **Status:** 0.2.0, extraction only. `dromorcraft_core_enabled` is off by default.
+> **Status:** 0.3.0, extraction and the outdated-version notice. `dromorcraft_core_enabled` is off by default.
 
 ## Settings
 
@@ -10,6 +10,7 @@ Discourse plugin of the [DromorCraft community forum](https://community.dromorcr
 | --- | --- | --- |
 | `dromorcraft_core_enabled` | off | Turns the plugin on. |
 | `dromorcraft_core_support_categories` | empty | Categories whose new topics are read (on the forum: Support › Help and Support › Launcher bugs). |
+| `dromorcraft_core_outdated_notice` | on | Puts the outdated-version notice on new support topics. |
 
 ## Extraction
 
@@ -29,8 +30,18 @@ When a regular topic is created in one of the support categories, the plugin fil
 
 The fields are read once, on `topic_created`; editing the post later doesn't change them.
 
+## Known versions and the outdated notice
+
+An hourly job (`Jobs::DromorcraftCore::RefreshKnownVersions`) reads the public [releases feed](https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases.atom), with no token.
+
+- The URL is fixed in the code, not a setting.
+- Only tags that are plain versions (`v1.4.24`) count; pre-releases and anything else are left out.
+- The feed lists only the latest releases, so each run adds to the stored list (in `PluginStore`, newest first, at most 100) instead of replacing it.
+- If the feed is down, times out, answers with an error, is larger than 1 MB or isn't a feed, the previous list stays.
+
+When a new support topic has a launcher version older than the newest known one, the first post gets a [post notice](https://meta.discourse.org/t/staff-notices/) with a link to `https://dromorcraft.com/download/`. Nothing is posted as a reply, so the topic isn't bumped and still counts as unanswered. The notice replaces the automatic first-post notices (new or returning user) but never one written by staff. A version newer than the latest known, or no known versions yet, means no notice.
+
 ## Planned
-- **Known launcher versions.** A scheduled job reads the public [releases feed](https://github.com/PaulHenryDeveloper/DromorCraft-releases/releases.atom) (no token). A topic on an outdated version gets a notice linking to the download page. If the feed is down, the previous list stays.
 - **Support card** above the first post, with the extracted data and links to the site's resources, readable in both palettes.
 - **Edit permissions.** Only the author and staff edit the fields.
 

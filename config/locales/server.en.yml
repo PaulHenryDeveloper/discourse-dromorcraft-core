@@ -2,3 +2,6 @@ en:
   site_settings:
     dromorcraft_core_enabled: "Enable the DromorCraft support features (structured data from the support form templates)."
     dromorcraft_core_support_categories: "Categories whose new topics are read for the launcher version, Minecraft version, system and loader (Support › Help and Support › Launcher bugs)."
+    dromorcraft_core_outdated_notice: "Put a notice with a link to the download page on support topics reported on a launcher older than the latest release (versions come from the public releases feed, checked every hour)."
+  dromorcraft_core:
+    outdated_notice: "This was reported on launcher %{version}, and %{latest} is out. [Update the launcher](%{url}) and check whether it still happens."
