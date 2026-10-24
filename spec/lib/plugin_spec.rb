@@ -5,7 +5,7 @@ RSpec.describe DromorcraftCore do
     expect(SiteSetting.dromorcraft_core_enabled).to eq(false)
   end
 
-  it "loads the engine" do
-    expect(DromorcraftCore::Engine.engine_name).to eq(DromorcraftCore::PLUGIN_NAME)
+  it "is registered as a plugin" do
+    expect(Discourse.plugins.map(&:name)).to include(DromorcraftCore::PLUGIN_NAME)
   end
 end
