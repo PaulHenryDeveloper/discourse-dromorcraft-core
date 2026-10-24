@@ -28,7 +28,9 @@ module ::DromorcraftCore
         Excon.get(
           URL,
           expects: [200],
-          headers: { "Accept" => "application/atom+xml" },
+          headers: {
+            "Accept" => "application/atom+xml",
+          },
           connect_timeout: TIMEOUT,
           read_timeout: TIMEOUT,
           write_timeout: TIMEOUT,
