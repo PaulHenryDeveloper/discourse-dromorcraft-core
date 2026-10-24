@@ -16,7 +16,7 @@ module ::DromorcraftCore
     def self.parse(xml)
       return [] unless xml.is_a?(String)
 
-      doc = Nokogiri::XML(xml)
+      doc = Nokogiri.XML(xml)
       doc.remove_namespaces!
       versions = doc.xpath("/feed/entry/id").map { |id| id.text.strip[TAG, 1] }
       versions.select { |v| SupportFields.version?(v) }.uniq
