@@ -1,0 +1,21 @@
+name: Discourse Plugin
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+# The forum runs the ESR channel (release/2026.7); the second job tests the newest monthly
+# release so a break shows up before the next ESR. Bump both refs when the forum moves.
+jobs:
+  esr:
+    uses: discourse/.github/.github/workflows/discourse-plugin.yml@v1
+    with:
+      core_ref: release/2026.7
+
+  release:
+    uses: discourse/.github/.github/workflows/discourse-plugin.yml@v1
+    with:
+      core_ref: release/2026.9
+      skip_linting: true
