@@ -33,9 +33,7 @@ RSpec.describe "Support card" do
     expect(page).to have_css(
       "#{card} .dromorcraft-support-card__update[href='https://dromorcraft.com/download/']",
     )
-    expect(page).to have_css(
-      "#{card} a[href='https://dromorcraft.com/resources/compatibility/']",
-    )
+    expect(page).to have_css("#{card} a[href='https://dromorcraft.com/resources/compatibility/']")
   end
 
   it "puts the card before the first post" do
