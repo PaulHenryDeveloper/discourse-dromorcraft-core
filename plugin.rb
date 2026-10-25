@@ -2,7 +2,7 @@
 
 # name: discourse-dromorcraft-core
 # about: Support topics for the DromorCraft launcher: structured launcher, Minecraft, system and loader data from the support form templates, editable by the author and staff, a card with that data above the first post, and a notice on topics reported on an old launcher.
-# version: 0.5.0
+# version: 0.5.1
 # authors: Paul Henry (DromorCraft)
 # url: https://github.com/PaulHenryDeveloper/discourse-dromorcraft-core
 # required_version: 2026.7.0
@@ -16,6 +16,7 @@ end
 require_relative "lib/dromorcraft_core/engine"
 
 register_asset "stylesheets/support-card.scss"
+register_asset "stylesheets/outdated-notice.scss"
 
 after_initialize do
   DromorcraftCore::SupportFields::ALL.each do |field|

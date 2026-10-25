@@ -1,0 +1,5 @@
+// The outdated-launcher notice takes the support card's neutral background instead of the
+// danger background core gives custom notices.
+.post-notice.custom:has(> .dromorcraft-outdated-notice) {
+  background: var(--primary-very-low);
+}
