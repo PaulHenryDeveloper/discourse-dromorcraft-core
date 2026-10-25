@@ -1,8 +1,8 @@
 # DromorCraft core
 
-Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader. A card above the first post shows that data with links to the site's resource pages, and topics reported on an old launcher get a notice pointing to the download page.
+Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader, editable by the topic's author and staff. A card above the first post shows that data with links to the site's resource pages, and topics reported on an old launcher get a notice pointing to the download page.
 
-> **Status:** 0.4.0, extraction, the support card and the outdated-version notice. `dromorcraft_core_enabled` is off by default.
+> **Status:** 0.5.0, extraction, editing, the support card and the outdated-version notice. `dromorcraft_core_enabled` is off by default.
 
 ## Settings
 
@@ -28,7 +28,7 @@ When a regular topic is created in one of the support categories, the plugin fil
 - Personal messages and other categories are ignored.
 - If extraction raises, the error is logged and the topic is created as usual.
 
-The fields are read once, on `topic_created`; editing the post later doesn't change them.
+The fields are read once, on `topic_created`; editing the post later doesn't change them. To change them, use the endpoint below.
 
 ## Known versions and the outdated notice
 
@@ -50,8 +50,27 @@ Support topics with stored data show a card above the first post (outlet `topic-
 - "Might help" links to pages under `https://dromorcraft.com/resources/`: Launcher updates (outdated launcher only), Common errors, Java versions, and Loaders and mod compatibility (Fabric, Quilt, Forge or NeoForge only). English URLs; the site sends visitors to their own language.
 - Labels are in English and Brazilian Portuguese (`config/locales/client.*.yml`). Colors come only from the palette variables, so the card follows the light and dark schemes.
 
+## Editing the fields
+
+`PUT /dromorcraft-core/topics/:topic_id/support` with any of `launcher_version`, `minecraft_version`, `os` and `loader`. A blank value clears the field.
+
+| Who | Result |
+| --- | --- |
+| Not logged in | 403 |
+| Can see the topic but isn't its author or staff | 403 |
+| The author, while the topic isn't archived | 200 |
+| Staff (moderators and admins), always | 200, logged in the staff action log as `dromorcraft_support_edit` |
+| Topic outside the support categories, or one the user can't see | 404 |
+
+- The rule lives in the guardian (`can_edit_dromorcraft_support?`), and the topic view sends it as `dromorcraft_support.can_edit`.
+- Values are checked with the same pattern and allowlists as extraction. One bad value is a 400, and nothing is saved.
+- Authors get at most 10 edits a minute.
+- A changed launcher version refreshes the outdated notice: rewritten for another old version, removed for the latest. A notice written by staff is left alone.
+
+There is no edit button in the forum yet; the endpoint is the contract for it.
+
 ## Planned
-- **Edit permissions.** Only the author and staff edit the fields.
+- **Edit button** on the support card for the author and staff, using the endpoint above.
 
 ## Form template contract
 
