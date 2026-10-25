@@ -4,3 +4,19 @@ en:
       site_settings:
         categories:
           discourse_dromorcraft_core: "DromorCraft"
+  js:
+    dromorcraft_core:
+      support_card:
+        title: "Support details"
+        launcher: "Launcher"
+        minecraft: "Minecraft"
+        system: "System"
+        loader: "Loader"
+        vanilla: "Vanilla"
+        update: "Update to %{version}"
+        might_help: "Might help:"
+        resources:
+          errors: "Common errors"
+          java: "Java versions"
+          updates: "Launcher updates"
+          compatibility: "Loaders and mod compatibility"

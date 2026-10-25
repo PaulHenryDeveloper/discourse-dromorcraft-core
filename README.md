@@ -1,8 +1,8 @@
 # DromorCraft core
 
-Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader. Topics reported on an old launcher get a notice pointing to the download page.
+Discourse plugin of the [DromorCraft community forum](https://community.dromorcraft.com). It turns the support form templates into structured data about the [DromorCraft launcher](https://dromorcraft.com): launcher and Minecraft versions, system and loader. A card above the first post shows that data with links to the site's resource pages, and topics reported on an old launcher get a notice pointing to the download page.
 
-> **Status:** 0.3.0, extraction and the outdated-version notice. `dromorcraft_core_enabled` is off by default.
+> **Status:** 0.4.0, extraction, the support card and the outdated-version notice. `dromorcraft_core_enabled` is off by default.
 
 ## Settings
 
@@ -41,8 +41,16 @@ An hourly job (`Jobs::DromorcraftCore::RefreshKnownVersions`) reads the public [
 
 When a new support topic has a launcher version older than the newest known one, the first post gets a post notice (the same kind staff add with "Add staff notice") with a link to `https://dromorcraft.com/download/`. Nothing is posted as a reply, so the topic isn't bumped and still counts as unanswered. The notice replaces the automatic first-post notices (new or returning user) but never one written by staff. A version newer than the latest known, or no known versions yet, means no notice.
 
+## Support card
+
+Support topics with stored data show a card above the first post (outlet `topic-above-posts`): launcher, Minecraft, system and loader, each only when present.
+
+- The data comes from the topic view (`dromorcraft_support`), sent only for topics in the support categories while the plugin is on. Values are checked against the same patterns and allowlists again before they are sent.
+- An outdated launcher gets an "Update to x.y.z" link to `https://dromorcraft.com/download/`.
+- "Might help" links to pages under `https://dromorcraft.com/resources/`: Launcher updates (outdated launcher only), Common errors, Java versions, and Loaders and mod compatibility (Fabric, Quilt, Forge or NeoForge only). English URLs; the site sends visitors to their own language.
+- Labels are in English and Brazilian Portuguese (`config/locales/client.*.yml`). Colors come only from the palette variables, so the card follows the light and dark schemes.
+
 ## Planned
-- **Support card** above the first post, with the extracted data and links to the site's resources, readable in both palettes.
 - **Edit permissions.** Only the author and staff edit the fields.
 
 ## Form template contract
@@ -102,6 +110,8 @@ CI runs the official [`discourse-plugin.yml`](https://github.com/discourse/.gith
 pnpm install
 pnpm lint
 ```
+
+QUnit tests live in `test/javascripts`; system specs (Playwright) in `spec/system`.
 
 Ruby specs run inside a Discourse checkout: `LOAD_PLUGINS=1 bin/rspec plugins/discourse-dromorcraft-core/spec`.
 

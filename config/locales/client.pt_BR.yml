@@ -1,0 +1,17 @@
+pt_BR:
+  js:
+    dromorcraft_core:
+      support_card:
+        title: "Dados do suporte"
+        launcher: "Launcher"
+        minecraft: "Minecraft"
+        system: "Sistema"
+        loader: "Loader"
+        vanilla: "Vanilla"
+        update: "Atualizar para a %{version}"
+        might_help: "Pode ajudar:"
+        resources:
+          errors: "Erros comuns"
+          java: "Versões do Java"
+          updates: "Atualizações do launcher"
+          compatibility: "Loaders e compatibilidade de mods"
